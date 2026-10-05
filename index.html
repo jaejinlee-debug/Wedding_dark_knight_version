@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#0b1115">
+  <meta name="description" content="이재진 · 이미진 | 2026년 12월 12일 토요일 오후 3시, KU컨벤션웨딩홀">
+  <meta property="og:title" content="이재진 · 이미진의 결혼식에 초대합니다">
+  <meta property="og:description" content="2026.12.12 토요일 오후 3시 · KU컨벤션웨딩홀">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:site_name" content="재진 ♥ 미진의 모바일 청첩장">
+  <!-- SHARE_META_START -->
+  <link rel="canonical" href="https://jaejinlee-debug.github.io/Wedding/">
+  <meta property="og:url" content="https://jaejinlee-debug.github.io/Wedding/">
+  <meta property="og:image" content="https://jaejinlee-debug.github.io/Wedding/images/share-cover.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="800">
+  <meta property="og:image:alt" content="재진과 미진의 웨딩사진">
+  <!-- SHARE_META_END -->
+  <title>이재진 · 이미진의 결혼식에 초대합니다</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Serif+KR:wght@400&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script src="share-config.js" defer></script>
+  <script src="script.js" defer></script>
+  <script src="share.js" defer></script>
+</head>
+<body>
+  <div id="intro" class="intro" hidden role="button" tabindex="0" aria-label="청첩장 열기">
+    <div class="intro-inner">
+      <p class="eyebrow">THE WEDDING OF</p>
+      <p class="intro-names">이재진 <span>&amp;</span> 이미진</p>
+      <p class="intro-date">2026. 12. 12 SAT 15:00</p>
+      <p class="intro-tap">화면을 터치해 주세요 <span aria-hidden="true">♫</span></p>
+    </div>
+  </div>
+  <button id="music-toggle" class="music-toggle" aria-label="배경음악 재생" aria-pressed="false"><span aria-hidden="true">♫</span> <span id="music-label">음악 켜기</span></button>
+  <audio id="bgm" loop preload="auto" src="music/I_m_Not_a_Hero.mp3"></audio>
+  <main>
+    <section class="cover" aria-labelledby="cover-title">
+      <div class="eyebrow">THE WEDDING OF</div>
+      <h1 id="cover-title">이재진 <span>&</span> 이미진</h1>
+      <p class="cover-line">저희 결혼합니다.</p>
+      <div class="hero-frame cover-film protected-media">
+        <img id="cover-photo" src="images/cover-batman.jpg" alt="불타는 배트 로고 아래 배트맨을 가운데 두고, 왼쪽의 신부와 오른쪽의 신랑이 서로를 바라보는 일러스트" draggable="false" decoding="async">
+        <div class="film-shade" aria-hidden="true"></div>
+      </div>
+      <div class="film-message cover-message"><p>좋은 날, 좋은 분들과<br>함께하고 싶습니다.</p><p>오셔서 축하해 주시면<br>감사하겠습니다.</p></div>
+      <p class="cover-date">2026. 12. 12 <span>SAT</span> 15:00</p>
+      <p class="venue">KU컨벤션웨딩홀</p>
+    </section>
+
+    <section class="section gallery-section"><p class="eyebrow">MOMENTS OF US</p><h2>둘이 함께한 순간들</h2><p class="section-note">평범한 날도, 특별한 날도.</p><div id="gallery" class="gallery"></div><p class="tiny">사진을 누르면 다음 사진이 나와요.</p></section>
+
+    <section class="section ceremony"><p class="eyebrow">SAVE THE DATE</p><h2>12월의 어느 좋은 날</h2><p class="event-time">2026년 12월 12일 토요일<br><strong>오후 3시</strong></p><p>KU컨벤션웨딩홀</p>
+      <div class="calendar"><div class="calendar-title">DECEMBER <span>2026</span></div><table aria-label="2026년 12월 달력, 12일 토요일 결혼식"><thead><tr><th scope="col">일</th><th scope="col">월</th><th scope="col">화</th><th scope="col">수</th><th scope="col">목</th><th scope="col">금</th><th scope="col">토</th></tr></thead><tbody id="calendar-body"></tbody></table></div>
+      <p id="countdown" class="countdown"></p><button id="calendar-add" class="button">＋ 달력에 일정 추가</button>
+    </section>
+
+    <section class="section directions"><p class="eyebrow">LOCATION</p><h2>오시는 길</h2><h3>KU컨벤션웨딩홀</h3><p id="address" class="section-note">상세 주소를 준비하고 있습니다.</p>
+      <div id="map-slot" class="map-slot venue-card"><strong>건국대학교동문회관 2층</strong><span>KU컨벤션웨딩홀 · 컨벤션홀</span></div>
+      <div class="button-row"><a id="naver-map" class="button" aria-disabled="true">네이버 지도</a><a id="kakao-map" class="button" aria-disabled="true">카카오맵</a></div>
+      <dl class="transport"><div><dt>지하철</dt><dd id="subway"></dd></div><div><dt>버스</dt><dd id="bus"></dd></div><div><dt>자가용</dt><dd>내비게이션에서 ‘KU컨벤션웨딩홀’ 또는 ‘건국대학교동문회관’을 검색해 주세요.</dd></div><div><dt>주차</dt><dd id="parking"></dd></div></dl>
+      <p class="tiny"><a href="https://www.kkweddinghall.co.kr/location/" target="_blank" rel="noopener noreferrer">예식장 공식 교통·주차 안내 ↗</a></p>
+    </section>
+
+    <section class="section contacts"><p class="eyebrow">CONTACT</p><h2>연락하기</h2><div id="contacts"></div></section>
+
+    <section class="section blessing"><p class="eyebrow">OUR PROMISE</p><span class="small-flower" aria-hidden="true">✳</span><blockquote>“혼자보다는 둘이 더 낫다.<br>두 사람이 함께 일할 때에,<br>더 좋은 결과를 얻을 수 있기 때문이다.”<cite>전도서 4:9</cite></blockquote>
+      <p>주님이 짝지어 주신 소중한 인연을 만나<br>혼자가 아닌 '우리'라는 이름으로 동행을 시작합니다.<br>두 사람이 함께 마주 보며 걸어갈 믿음의 여정에<br>귀한 걸음으로 오셔서 축복해 주시면 감사하겠습니다.</p>
+      <div class="closing-photo protected-media" data-photo="closing"><img src="images/photo-03.jpg" alt="십자가 앞에서 서로를 바라보는 두 사람" loading="lazy"></div>
+      <aside class="flower-notice"><h3>화환 사양 안내</h3><p>예식장 규정 및 공간 협소로 인해 조화, 쌀화환 등 모든 화환은 정중히 사양합니다. 보내주시는 따뜻한 축하의 마음만 감사히 받겠습니다.</p></aside>
+      <p class="signoff family-signoff"><span class="family-line"><span class="family-parents">이동훈 · 윤혜영</span><span class="family-relation">의 아들</span> <strong>재진</strong></span><span class="family-heart" aria-label="사랑">♡</span><span class="family-line"><span class="family-parents">이은성 · 이순자</span><span class="family-relation">의 딸</span> <strong>미진</strong></span></p><p class="eyebrow">THANK YOU FOR BEING PART OF OUR DAY</p>
+    </section>
+
+
+    <section class="section accounts" id="accounts">
+      <button id="account-toggle" class="account-toggle" type="button" aria-expanded="false" aria-controls="account-groups">마음 전하실 곳 <span aria-hidden="true">▾</span></button>
+      <div id="account-groups" hidden><p class="section-note">보내주시는 따뜻한 마음,<br>소중히 간직하겠습니다.</p></div>
+    </section>
+    <section class="section share-section" aria-labelledby="share-heading"><p class="eyebrow">SHARE OUR DAY</p><h2 id="share-heading">소중한 분께 전해 주세요</h2><button id="kakao-share" class="button kakao-share" hidden>카카오톡으로 보내기</button><button id="copy-link" class="button">청첩장 링크 복사</button><p id="share-status" class="tiny" role="status"></p><input id="share-url" class="share-url" aria-label="복사할 청첩장 주소" readonly hidden></section>
+  </main>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="noscript">사진과 연락처, 달력 추가 기능을 이용하려면 JavaScript를 켜 주세요.</p></noscript>
+</body>
+</html>
